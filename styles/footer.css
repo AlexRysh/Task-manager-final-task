@@ -1,0 +1,87 @@
+.main-footer{
+	width: 100%;
+	min-height: 180px;
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.social-networks-contacts__title{
+	margin: 0;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+}
+
+.social-networks{
+	height: 3em;
+	width: 10em;
+	margin: 1em 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-networks__item{
+	width: 3em;
+	height: 3em;
+	background-color: black;
+	border: 0.1em solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: color 0.4s;
+}
+
+.social-networks__item:hover{
+	background-color: white;
+	transition: background-color 0.4s;
+}
+
+.social-networks__item:hover>*{
+	color: black;
+}
+
+.home-ref{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	color: lightgreen;
+	text-align: center;
+	transition: color 1s;
+	-webkit-animation: fluctuate 1s infinite;
+    animation: fluctuate 1s infinite;
+}
+
+.home-ref:hover{
+	color: #FF2500;
+}
+
+@-webkit-keyframes fluctuate {
+    0%   {top: 0px;}
+    10%	 {top: 1px;}
+    20%  {top: 2px;}
+    30%  {top: 3px;}
+    40%  {top: 6px;}
+    50%  {top: 8px}
+    60%  {top: 6px;}
+    70%  {top: 3px;}
+    80%	 {top: 2px;}
+    90%  {top: 1px;}
+    100% {top: 0px;}
+}
+
+@keyframes fluctuate {
+    0%   {top: 0px;}
+    10%	 {top: 1px;}
+    20%  {top: 2px;}
+    30%  {top: 3px;}
+    40%  {top: 6px;}
+    50%  {top: 8px}
+    60%  {top: 6px;}
+    70%  {top: 3px;}
+    80%	 {top: 2px;}
+    90%  {top: 1px;}
+    100% {top: 0px;}
+}
