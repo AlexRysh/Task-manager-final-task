@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 
 .registration-form {
   min-width: 200px;
-  height: 300px;
+  height: 400px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -72,9 +72,10 @@ body::-webkit-scrollbar {
 }
 
 .registration-form>input {
-  height: 15%;
+  height: 12%;
   padding: 0 1em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: bold;
   color: #000000;
   text-decoration: none;
   background-color: white;
@@ -107,7 +108,7 @@ body::-webkit-scrollbar {
 }
 
 .registration-form__submit-btn {
-  height: 18%;
+  height: 14%;
   background-color: black;
   outline: none;
   border: none;
@@ -123,8 +124,24 @@ body::-webkit-scrollbar {
   transition: background-color 0.3s;
 }
 
+.registration-form__choise-description{
+  margin: 0 auto;
+  font-weight: bold;
+  color: #FF2500;
+}
+
 .registration-form__role-choise {
+  height: 11%;
+  width: 100%;
+  text-align: center;
+  padding-left: 1em;
   font-size: 1em;
   font-weight: bolder;
-  border: 0.1em solid black;
+  border: 0.2em solid black;
+  outline: 0;
+}
+
+.role-choise__option{
+  font-size: 1em;
+  font-weight: bold;
 }

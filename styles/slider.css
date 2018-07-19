@@ -97,15 +97,15 @@
 .slide__description{
 	max-width: 18em;
 	position: absolute;
-	color: white;
+	color: black;
 	text-align: center;
 	font-size: 3em;
 	font-weight: bolder;
-	opacity: 0.2;
-	text-shadow: 1px 1px 0 black,
-                 1px -1px 0 black,
-                -1px 1px 0 black,
-                -1px -1px 0 black;
+	opacity: 0.4;
+	text-shadow: 1px 1px 0 white,
+                 1px -1px 0 white,
+                -1px 1px 0 white,
+                -1px -1px 0 white;
   	text-transform: uppercase;
   	transition: all 1.5s;
   	text-decoration: underline;
@@ -118,11 +118,11 @@
 }
 
 .slide__description:hover{
-     color: black;
-     text-shadow: 1px 1px 0 white,
-                  1px -1px 0 white,
-                 -1px 1px 0 white,
-                 -1px -1px 0 white;
+     color: white;
+     text-shadow: 1px 1px 0 black,
+                  1px -1px 0 black,
+                 -1px 1px 0 black,
+                 -1px -1px 0 black;
 }
 
 @media screen and (max-width: 1600px) {

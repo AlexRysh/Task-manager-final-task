@@ -129,7 +129,7 @@
   height: 15%;
   padding: 0 1em;
   border: 0.2em solid #000000;
-  font-weight: 700;
+  font-weight: bolder;
   color: #000000;
   text-decoration: none;
   background-color: white;
@@ -177,8 +177,8 @@
   transition: background-color 0.3s;
 }
 
-.register-link {
-  color: black;
+.additional-options__register-link {
+  color: red;
   text-decoration: underline;
 }
 
@@ -195,7 +195,29 @@
   margin-left: 1em;
 }
 
+.log-out{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding: 0 1.5em;
+  margin-left: 1em;
+}
+
+.log-out:hover{
+  background-color: #FF2500;
+}
+
 .auth-link {
+  height: 100%;
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.log-out-link{
+  display: none;
   height: 100%;
   color: white;
   letter-spacing: 0.1em;
@@ -209,16 +231,34 @@
 
 .auth:before {
   display: inline-block;
+  line-height: 1em;
   padding-right: 0.5em;
   margin-top: 0.1em;
-  opacity: 0.2;
+  opacity: 1;
   transition: opacity 1s;
   content: url('../images/login-icon.png');
 }
 
-.auth:hover:before {
-  opacity: 1;
+.remember-me__checkbox{
+    display: none;
 }
+
+.remember-me__label:before{
+  content: "";
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2em;
+}
+
+.remember-me__checkbox:checked + .remember-me__label:before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    color: #FF2500;
+    line-height: 1em;
+}
+
 
 @media only screen and (max-width: 780px) {
   .main-header {
@@ -270,5 +310,20 @@
   }
   .auth:hover {
     background-color: transparent;
+  }
+  .log-out{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #FF2500;
+  }
+
+  .log-out:hover{
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .additional-options__remember-me {
+      display: none;
   }
 }

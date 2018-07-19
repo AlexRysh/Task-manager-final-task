@@ -1,6 +1,6 @@
 'use strict'
 
-function slider(sSelector, slideInterval) {
+function Slider(sSelector, slideInterval) {
   var s = this;
   s.wrapper = document.querySelector(sSelector);
   s.slider = s.wrapper.querySelector('.slider');
@@ -9,7 +9,7 @@ function slider(sSelector, slideInterval) {
   s.prevSlideBtn = s.slider.querySelector('.slider__cntrl--prev');
   s.nextSlideBtn = s.slider.querySelector('.slider__cntrl--next');
   s.slideDescription = s.slider.querySelectorAll('.slide__description');
-  s.progressBar = document.querySelector('.progress');
+  s.progressBar = s.wrapper.querySelector('.progress');
   s.progressDone = s.progressBar.querySelector('.progress__done');
   s.slidesQuantity = s.slide.length;
   s.slideInterval = slideInterval;
@@ -85,7 +85,3 @@ function slider(sSelector, slideInterval) {
 
   s.incraseProgressDone();
 }
-
-var firstSlider = new slider('.main-part', 10000);
-
-

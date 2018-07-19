@@ -15,7 +15,7 @@
 	text-align: center;
 }
 
-.social-networks{
+.social-networks-contacts__link-list{
 	height: 3em;
 	width: 10em;
 	margin: 1em 0;
@@ -23,7 +23,7 @@
 	justify-content: space-between;
 }
 
-.social-networks__item{
+.link-list__item{
 	width: 3em;
 	height: 3em;
 	background-color: black;
@@ -34,16 +34,16 @@
 	transition: color 0.4s;
 }
 
-.social-networks__item:hover{
+.link-list__item:hover{
 	background-color: white;
 	transition: background-color 0.4s;
 }
 
-.social-networks__item:hover>*{
+.link-list__item:hover>*{
 	color: black;
 }
 
-.home-ref{
+.main-footer__home-ref{
 	width: 100%;
 	position: relative;
 	display: inline-block;
@@ -54,7 +54,7 @@
     animation: fluctuate 1s infinite;
 }
 
-.home-ref:hover{
+.main-footer__home-ref:hover{
 	color: #FF2500;
 }
 

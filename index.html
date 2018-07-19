@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>main-page</title> 
 	<link rel="icon" href="images/logo.png" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="style.css"/>	
 	<link rel="stylesheet" type="text/css" href="styles/header.css"/>	
 	<link rel="stylesheet" type="text/css" href="styles/slider.css"/>	
-	<link rel="stylesheet" type="text/css" href="styles/footer.css"/>		
+	<link rel="stylesheet" type="text/css" href="styles/footer.css"/>	
+	<link rel="stylesheet" type="text/css" href="style.css"/>		
+	<link rel="stylesheet" type="text/css" href="styles/gallery.css"/>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"/> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
@@ -42,18 +43,21 @@
 			<label class="auth-link" for="auth-form-trigger">
 				<p class="auth">Log in</p>
 			</label>
+			<section class="log-out-link">
+				<p class="log-out">Log out</p>
+			</section>
 			<form class="auth-form">
 				<label class="auth-form-close" for="auth-form-trigger">
 					<span class="fas fa-times fa-2x auth-form-close__icon"></span>
 				</label>
 				<h3 class="auth-form__title">Enter your login and password please</h3>
-				<input type="text" name="login" placeholder="login" />
-				<input type="text" name="password" placeholder="password" />
+				<input class="auth-form__login" type="text" name="login" placeholder="login" />
+				<input class="auth-form__password" type="text" name="password" placeholder="password" />
 				<section class="auth-form__additional-options">
-					<a class="register-link" href="registration-page.html">Haven't got an account yet?</a>
-					<section>
-						<input id="remember-me" type="checkbox"/>
-						<label class="remember-me-label" for="remember-me">Remember me</label>
+					<a class="additional-options__register-link" href="registration-page.html">Haven't got an account yet?</a>
+					<section class="additional-options__remember-me">
+						<input id="remember-me" class="remember-me__checkbox" type="checkbox"/>
+						<label class="remember-me__label" for="remember-me">Remember me</label>
 					</section>
 				</section>
 				<button type="submit" class="auth-form__submit-btn">Log in</button>
@@ -80,73 +84,128 @@
 		<h1 class="project-name">Task manager</h1>
 		<section class="advantages-list" id="advantages">
 			<h2 class="advantages-list__title">Advantages</h2>
-			<article class="advantages-list__item">
-				<h3 class="advantages-list__item-title">Lorem Ipsum</h3>
+			<article class="advantages-list__advantage">
+				<h3 class="advantage__title">Lorem Ipsum</h3>
 				<span class="separator"></span>
-				<img src="images/advantage-1.png" alt="project-logo" class="advantages-list__item-logo" /> 
-				<p class="advantages-list__item-description">
+				<img src="images/advantage-1.png" alt="project-logo" class="advantage__logo" /> 
+				<p class="advantage__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis.
 				</p>
 			</article>
-			<article class="advantages-list__item">
-				<h3 class="advantages-list__item-title">Lorem Ipsum</h3>
+			<article class="advantages-list__advantage">
+				<h3 class="advantage__title">Lorem Ipsum</h3>
 				<span class="separator"></span>
-				<img src="images/advantage-2.png" alt="project-logo" class="advantages-list__item-logo" /> 
-				<p class="advantages-list__item-description">
+				<img src="images/advantage-2.png" alt="project-logo" class="advantage__logo" /> 
+				<p class="advantage__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis.
 				</p>
 			</article>
-			<article class="advantages-list__item">
-				<h3 class="advantages-list__item-title">Lorem Ipsum</h3>
+			<article class="advantages-list__advantage">
+				<h3 class="advantage__title">Lorem Ipsum</h3>
 				<span class="separator"></span>
-				<img src="images/advantage-1.png" alt="project-logo" class="advantages-list__item-logo" /> 
-				<p class="advantages-list__item-description">
+				<img src="images/advantage-1.png" alt="project-logo" class="advantage__logo" /> 
+				<p class="advantage__description">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis.
 				</p>
 			</article>
 			<article class="advantages-list__conclusion">
 				<h2 class="conclusion-title">Conclusion</h2>
 				<p class="conclusion__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo.</p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Nunc lacinia magna sit amet interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo.</p>
 			</article>
 		</section>
 		<section class="transitional-section transitional-section--background-1"></section>
 		<article class="about-project" id="about-us">
 			<h2 class="about-project__title">About us</h2>
 			<section class="about-project__description-wrapper">
-				<img src="images/about.jpg" alt="project-logo" align="left" class="about-project__image" /> 
+				<section class="slider slider--text-sleeky">
+					<ul class="slider__wrapper">
+		                <li class="slider__slide slider__slide--active"><img src="images/transitional-image-3.jpg" alt="slide-1" class="slide-img"/><p class="slide__description"></p></li>
+		                <li class="slider__slide"><img src="images/transitional-image-1.jpg" alt="slide-2" class="slide-img"/><p class="slide__description"></p></li>
+		                <li class="slider__slide"><img src="images/transitional-image-2.jpg" alt="slide-3" class="slide-img"/><p class="slide__description"></p></li>
+		                <li class="slider__slide"><img src="images/about.jpg" alt="slide-4" class="slide-img"/><p class="slide__description"></p></li>
+		           	</ul>	
+		           	<button class="slider__cntrl slider__cntrl--text-sleeky slider__cntrl--prev"><i class="fas fa-caret-left fa-4x"></i></button>
+		           	<button class="slider__cntrl slider__cntrl--text-sleeky slider__cntrl--next"><i class="fas fa-caret-right fa-4x"></i></button>
+		           	<span class = 'progress'>
+						<span class = 'progress__done'></span>
+					</span>
+				</section>
 				<p class="about-project__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Proin aliquam ipsum non ultricies interdum. Etiam semper nibh eget mi malesuada feugiat. Nunc lacinia magna sit amet interdum lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo.
-				Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo. Cras sed euismod nisi, ut gravida tortor. Cras purus erat, maximus vel lorem in, faucibus lacinia ante. Donec sodales maximus risus non tincidunt. Donec a tristique neque, vitae efficitur tortor. Donec nec nisi nisi. Sed eu tortor id lacus pulvinar semper a ut tellus. Ut vel luctus nunc. Proin ac iaculis justo.</p>
+				</p>
 			</section>
 		</article>
 		<section class="transitional-section transitional-section--background-2"></section>
 		<section class="gallery">
 			<h2 class="gallery__title">gallery</h2>
-			<section class="gallery__content"></section>
+			<section class="gallery__image-list"> 
+				<section class="image-list__images-wrapper">
+					<section class="images-wrapper__subwrapper">
+						<img class="image-list__item" src="images/gallery/1.jpg" alt="gallery image"/>
+						<img class="image-list__item" src="images/gallery/2.jpg" alt="gallery image"/>
+					</section>
+					<section class="images-wrapper__subwrapper">
+						<img class="image-list__item" src="images/gallery/3.jpg" alt="gallery image"/>
+						<img class="image-list__item" src="images/gallery/4.jpg" alt="gallery image"/>
+					</section>
+				</section>
+				<section class="image-list__images-wrapper">
+					<section class="images-wrapper__subwrapper">
+						<img class="image-list__item" src="images/gallery/5.jpg" alt="gallery image"/>
+						<img class="image-list__item" src="images/gallery/6.jpg" alt="gallery image"/>
+					</section>
+					<section class="images-wrapper__subwrapper">
+						<img class="image-list__item" src="images/gallery/7.jpg" alt="gallery image"/>
+						<img class="image-list__item" src="images/gallery/8.jpg" alt="gallery image"/>
+					</section>
+				</section>		
+			</section>
+			<div class="gallery__pagination">
+			</div>		
 		</section>
 		<section class="transitional-section transitional-section--background-3"></section>
 		<article class="contacts">
 			<h2 class="contacts__title">Our Contacts</h2>
 			<p class="contacts__leave-feedback">we would be happy to get your feedback</p>
-			<ul class="contacts__contacts-list">
-				<li class="contacts-list__location"><i class="fa fa-map-marker fa-fw"></i>Kyiv, UA</li>
-				<li class="contacts-list__phone-number"><i class="fa fa-phone fa-fw"></i>Phone: +38(050)-501-3-301</li>
-				<li class="contacts-list__e-mail"><i class="fa fa-envelope fa-fw"></i>E-mail: manageprojectshard@gmail.com</li>
-			</ul>
-			<section></section>
+			<section class="contacts__wrapper">
+				<iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10163.392480013876!2d30.4506857!3d50.4439296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc2772332c63%3A0xe8225bab52a53a3e!2z0J_QsNC8J9GP0YLQvdC40Log0KjQsNGA0ZY!5e0!3m2!1suk!2sua!4v1531916868938" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<section class="contacts__list-and-feedback-wrapper">
+					<ul class="contacts__contacts-list">
+						<li class="contacts-list__location"><i class="fa fa-map-marker fa-fw"></i>Kyiv, UA</li>
+						<li class="contacts-list__phone-number"><i class="fa fa-phone fa-fw"></i>Phone: +38(050)-501-3-301</li>
+						<li class="contacts-list__e-mail"><i class="fa fa-envelope fa-fw"></i>E-mail: manage-projects-hard@gmail.com</li>
+					</ul>
+	   				<form class="contacts__feedback-form" action="#">
+	   					<h3 class="feedback-form__title">like our service? leave a feedback!</h3>
+				   	    <section class="feedback-form__user-data">
+				            <input class="user-data__name" type="text" placeholder="Name" required name="Name"/>
+				            <input class="user-data__e-mail" type="text" placeholder="Email" required name="Email"/>
+				        </section>
+				        <textarea class="feedback-form__message" type="textarea" placeholder="Message" required name="Message"></textarea>
+				        <button class="feedback-form__submit-btn" type="submit">
+				          <i class="fa fa-paper-plane"></i> send message
+				        </button>
+		   			 </form>
+				</section>
+			</section>
 		</article>
 	</main>
 	<footer class="main-footer">
-		<section class="social-network-contacts">
+		<section class="social-networks-contacts">
 			<h3 class="social-networks-contacts__title">contact us!</h3>
-			<section class="social-networks">
-				<a href="https://vk.com/" class="social-networks__item"><i class="fab fa-vk vk-logo"></i></a>
-				<a href="https://www.facebook.com/" class="social-networks__item"><i class="fab fa-facebook-f fb-logo"></i></a>
-				<a href="https://www.instagram.com/" class="social-networks__item"><i class="fab fa-instagram inst-logo"></i></a>
+			<section class="social-networks-contacts__link-list">
+				<a href="https://vk.com/" class="link-list__item"><i class="fab fa-vk vk-logo"></i></a>
+				<a href="https://www.facebook.com/" class="link-list__item"><i class="fab fa-facebook-f fb-logo"></i></a>
+				<a href="https://www.instagram.com/" class="link-list__item"><i class="fab fa-instagram inst-logo"></i></a>
 			</section>
-			<a href="#home" class="home-ref"><i class="fa fa-arrow-up"></i>To the top</a>
+			<a href="#home" class="main-footer__home-ref"><i class="fa fa-arrow-up"></i>To the top</a>
 		</section>
 	</footer>
+	<script src="js/common.js" type="text/javascript"></script>
+	<script src="js/User.js" type="text/javascript"></script>
+	<script src="js/auth.js" type="text/javascript"></script>
+	<script src="js/gallery.js" type="text/javascript"></script>
 	<script src="js/slider.js" type="text/javascript"></script>	
+	<script src="js/script.js" type="text/javascript"></script>	
 </body>
 </html>
